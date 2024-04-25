@@ -1,6 +1,6 @@
 FUNCIONALIDADE DA PAGINA WEB
 
-A primeira pagina trata-se de uma pagina para login de um usuario, a segunda e utilizada para caso este usuario tenha esquecido a sua senha de login atual, ajudando e realizando uma recuperação de senha.
+A primeira pagina trata-se de uma pagina para login de um usuario, a segunda e utilizada para caso este usuario tenha esquecido a sua senha de login atual, ajudando e realizando uma recuperação de senha.E também temos a pagina de cadastro caso o usuário ainda não tenha realizado seu cadastro.
 
 # tela-de-login
 
@@ -44,4 +44,24 @@ Esse código é uma página HTML que cria uma interface simples de login. Vou ex
 <label for="email">E-mail:</label>: Rótulo para o campo de entrada de e-mail.
 <input type="email" id="email" name="email" required>: Campo de entrada de e-mail, com o atributo required indicando que é obrigatório preencher este campo.
 <input type="submit" value="Recuperar Senha">: Botão de envio do formulário.
-<script>: Não há scripts incluídos nesta página.
+<script>: Não há scripts incluídos nesta página. 
+
+# cadastro
+
+Este é um código HTML básico para criar um formulário de cadastro. Vou explicar as principais partes:
+
+<!DOCTYPE html>: Declara o tipo de documento como HTML5.
+<html lang="pt-br">: Define o idioma do documento como português do Brasil.
+<head>: Esta seção contém metadados e referências a recursos externos, como folhas de estilo e scripts.
+<meta charset="UTF-8">: Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: Define a largura da viewport como o largura do dispositivo e escala inicial como 1.
+<title>Cadastro</title>: Define o título da página como "Cadastro".
+<style>: Define as regras de estilo CSS embutidas para estilizar a página.
+<body>: Esta seção contém o conteúdo visível da página.
+<div class="container">: Define um contêiner com uma largura máxima de 400px, centrado horizontalmente na página e com um fundo rosa claro.
+<h2>Cadastro</h2>: Um título de nível 2 que diz "Cadastro".
+<form action="processa_cadastro.php" method="post">: Um formulário HTML com o atributo action definido como "processa_cadastro.php", indicando para onde os dados do formulário serão enviados quando o formulário for submetido, e o método post, que envia os dados de forma que não são visíveis na URL.
+<label for="nome">Nome:</label>: Um rótulo para o campo de entrada de nome, indicado pelo atributo for correspondente ao id do campo de entrada.
+<input type="text" id="nome" name="nome" required>: Um campo de entrada de texto para o nome, com o id "nome" e o name "nome". O atributo required indica que este campo é obrigatório.
+O mesmo padrão se repete para os campos de email e senha.
+<input type="submit" value="Cadastrar">: Um botão de envio do formulário com o valor "Cadastrar".
